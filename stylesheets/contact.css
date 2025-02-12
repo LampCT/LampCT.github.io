@@ -1,0 +1,121 @@
+/* Contact CSS */
+
+
+.content-box {
+    margin: 0;
+    padding: 0 10%;
+    display: flex;
+}
+
+
+.content-box p {
+    width: 70%;
+    height: 100%;
+    font-family: "MD Primer";
+    font-size: 2rem;
+}
+
+.content-box img {
+    width: 30%;
+    height: 100%;
+    border-radius: 0px;
+    transition: border-radius 0.5s;
+}
+
+.content-box img:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+.text-pane {
+    width: 100%;
+}
+
+.text-pane h1 {
+    color: var(--accent1);
+    font-family: "MD Primer Bold";
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.write {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      write 3.5s steps(40, end),
+      stay .75s step-end infinite;
+}
+  
+@keyframes write {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+@keyframes stay {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1440px) {
+
+    .text-pane h1 {
+        font-size: 3rem;
+        font-family: "MD Primer";
+
+    }
+    .write {
+        letter-spacing: normal;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .text-pane h1 {
+        font-size: 1.8rem;
+        font-family: "MD Primer";
+
+    }
+    .write {
+        white-space: normal;
+        letter-spacing: normal;
+        animation: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .text-pane h1 {
+        font-size: 1.8rem;
+    }
+    .write {
+        white-space: normal;
+        letter-spacing: normal;
+        animation: none;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .text-pane h1 {
+        font-size: 1.8rem;
+        font-family: "MD Primer";
+
+    }
+    .write {
+        white-space: normal;
+        letter-spacing: normal;
+        animation: none;
+    }
+}

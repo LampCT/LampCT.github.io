@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/shared.css">
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <script defer src="./src/shared.js"></script>
+    <script defer src="./src/index.js"></script>
+    <title>Landing</title>
+</head>
+<body class="flex-pane">
+    <div class="off-screen-menu" id="offMenu">
+        <ul>
+            <li><a onclick="location.href='index.html'">Home</a></li>
+            <li><a onclick="location.href='game.html'">Game</a></li>
+            <li><a onclick="location.href='hobby.html'">Hobby</a></li>
+            <li><a onclick="location.href='work.html'">Work</a></li>
+        </ul>
+    </div>
+
+    <div class="nav">
+        <div class="nav-title">
+            <img id="Lamp"src="./assets/lamp.svg" alt="">
+            <h1 id="navTitle">Lamps Post</h1>
+        </div>
+        <div class="ham-menu" id ="hamMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <button class="nav-link" onclick="location.href='index.html'">Home</button>
+            <button class="nav-link" onclick="location.href='./views/hobby.html'">Hobby</button>
+            <button class="nav-link" onclick="location.href='./views/game.html'">Game</button>
+            <button class="nav-link" onclick="location.href='./views/work.html'">Work</button>
+        </div>
+    </div>
+    <div class="header">
+        <h1>My site</h1>
+        <div id="header-spacer"></div>
+    </div>
+    <div class="content">
+        <div class="content-box">
+            <p>Hi, I’m Scott Olmstead, an undergraduate at <a href="https://www.nmsu.edu">New Mexico State University</a> studying networking and software design. I enjoy solving problems, building projects, and learning new things along the way. Thanks for stopping by   feel free to explore! </p>
+            <img id="headshot"src="./assets/HeadShot.png" alt="">
+        </div>
+        <div class="content-box">
+            <p> </p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="notes">
+            <p>The website is now published</p>
+            <p></p>
+            <p>The assets I used are not mine, I do not own them</p>
+        </div>
+        <div class="media">
+            <button class="media-link" onclick="window.open('https://github.com/LampCT')"><img src="./assets/git.svg" alt=""></button>
+            <button class="media-link" onclick="window.open('https://github.com/LampCT')"><img src="./assets/disc.svg" alt=""></button>
+            <button class="media-link" onclick="window.open('https://github.com/LampCT')"><img src="./assets/yt.svg" alt=""></button>
+        </div>
+    </div>
+</body>
+</html>

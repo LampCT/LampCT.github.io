@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/shared.css">
+    <link rel="stylesheet" href="../stylesheets/game.css">
+    <script src="../src/connect.js"></script>
+    <script defer src="../src/shared.js"></script>
+    <title>Game Page</title>
+</head>
+<body class="flex-pane">
+    <div class="off-screen-menu" id="offMenu">
+        <ul>
+            <li><a onclick="location.href='index.html'">Home</a></li>
+            <li><a onclick="location.href='game.html'">Game</a></li>
+            <li><a onclick="location.href='hobby.html'">Hobby</a></li>
+            <li><a onclick="location.href='work.html'">Work</a></li>
+        </ul>
+    </div>
+    
+    <div class="nav">
+        <div class="nav-title">
+            <img id="Lamp"src="../assets/lamp.svg" alt="">
+            <h1>Lamps Post</h1>
+        </div>
+        <div class="ham-menu" id ="hamMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <button class="nav-link" onclick="location.href='../index.html'">Home</button>
+            <button class="nav-link" onclick="location.href='hobby.html'">Hobby</button>
+            <button class="nav-link" onclick="location.href='game.html'">Game</button>
+            <button class="nav-link" onclick="location.href='work.html'">Work</button>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Connect 4</h1>
+        <div id="header-spacer"></div>
+    </div>
+    <div class="content">
+        <div class="text-pane">
+            <h1>How to play</h1>
+            <p>Connect 4 is a game where two players take turns dropping their colored piece from the top into the board. The goal of the game is to connect 4 pieces in a straight line. </p>
+        </div>
+        <div class="content-box">
+            <div class="game-board" id="board-container"></div></div>
+        </div>
+        <div class="text-pane">
+            <h1> How it works</h1>
+            <p> The board is represented as an array of 42 elements. <br> Defining a compass rose to move through the array.<br> Recursive functions use the compass rose to "drop" pieces and check for 4 in a row.</p>
+        </div>
+    </div>
+    <div class="footer">
+
+
+        <div class="notes">
+            <p>The website is still under construction, please mind bugs</p>
+            <p>The assets I used are not mine, I do not own them</p>
+            <p>The website is still under construction, please mind bugs</p>
+        </div>
+        <div class="media">
+            <button class="media-link" onclick="window.open('https://github.com/LampCT')"><img id="git" src="../assets/git.svg" alt=""></button>
+            <button class="media-link" onclick="window.open('https://github.com/LampCT')"><img id="git" src="../assets/disc.svg" alt=""></button>
+            <button class="media-link" onclick="window.open('https://github.com/LampCT')"><img id="git" src="../assets/yt.svg" alt=""></button>
+        </div>
+    </div>
+</body>
+</html>
