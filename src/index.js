@@ -1,3 +1,3 @@
 document.getElementById("headshot").onclick = () => {
-    window.location.href = "contact.html";
+    window.location.href = "./views/contact.html";
 }
